@@ -10,6 +10,7 @@
     "dev": "bunx --bun vite serve example",
     "test": "vitest",
     "build": "bunx --bun vite build example",
+    "initPackages":"bun run ./scripts/init-packages.ts",
     "format": "bunx @biomejs/biome format ./src/**/*.{ts,vue} --write",
     "lint": "bunx @biomejs/biome lint ./src/**/*.{ts,vue}"
   },
@@ -23,6 +24,7 @@
     "@vitejs/plugin-vue": "^5.0.3",
     "browserslist": "^4.22.2",
     "bun-types": "^1.0.0",
+    "lib": "^5.1.0",
     "only-allow": "^1.2.1",
     "typescript": "^5.3.0",
     "vite": "^5.0.0",

@@ -1,3 +1,6 @@
-import type { StableComponent } from "@stable/shared";
+import { patchInstall } from "@stable/shared";
 
-export const Button: StableComponent = {}
+import Button from "./Button.vue"
+
+export const SButton = patchInstall(Button, {})
+    

@@ -1,0 +1,11 @@
+{
+  "name": "@stable/popconfirm",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vue": "^3.4.0"
+  },
+  "peerDependencies": {
+  }
+}

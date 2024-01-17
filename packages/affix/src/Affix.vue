@@ -9,5 +9,9 @@ defineOptions({
   name: "SAffix"
 });
 
-withDefaults(defineProps<AffixProps>(), {})
+withDefaults(defineProps<AffixProps>(), {
+  target: () => globalThis
+})
+
+defineEmits(["change"]);
 </script> 

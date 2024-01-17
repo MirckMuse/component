@@ -1,27 +1,27 @@
 // 初始化 packages 所有组件。
-import { resolve } from "path"
-import { readdirSync, existsSync, rmSync, writeFileSync, readFileSync, mkdirSync, statSync } from "fs"
+import {resolve} from "path"
+import {readdirSync, existsSync, rmSync, writeFileSync, readFileSync, mkdirSync, statSync} from "fs"
 
 const packagesRootPath = resolve(import.meta.dir, '../packages');
 
 // 初始化 git 忽略文件
 function makeGitignore(packagePath: string) {
-  writeFileSync(resolve(packagePath, '.gitignore'), readFileSync(resolve(import.meta.dir, 'template/gitignore'), { encoding: "utf-8" }), { encoding: "utf-8" })
+  writeFileSync(resolve(packagePath, '.gitignore'), readFileSync(resolve(import.meta.dir, 'template/gitignore'), {encoding: "utf-8"}), {encoding: "utf-8"})
 }
 
 function makeReadme(packagePath: string, packageName: string) {
-  const templateContent = readFileSync(resolve(import.meta.dir, 'template/readme'), { encoding: "utf-8" });
+  const templateContent = readFileSync(resolve(import.meta.dir, 'template/readme'), {encoding: "utf-8"});
   writeFileSync(resolve(packagePath, 'README.md'), `
 # @stable/${packageName}
 
 ${templateContent}
-  `, { encoding: "utf-8" })
+  `, {encoding: "utf-8"})
 }
 
 function makePackageJson(packagePath: string, packageName: string) {
-  const templateContent = readFileSync(resolve(import.meta.dir, 'template/package'), { encoding: "utf-8" });
+  const templateContent = readFileSync(resolve(import.meta.dir, 'template/package'), {encoding: "utf-8"});
 
-  writeFileSync(resolve(packagePath, "package.json"), templateContent.replace("{{packageName}}", packageName), { encoding: "utf-8" })
+  writeFileSync(resolve(packagePath, "package.json"), templateContent.replace("{{packageName}}", packageName), {encoding: "utf-8"})
 }
 
 function capitalize(target: string) {
@@ -58,7 +58,7 @@ import ${capitalizedPackageName} from "./${capitalizedPackageName}.vue"
 
 export const S${capitalizedPackageName} = patchInstall(${capitalizedPackageName}, {})
     `,
-    { encoding: "utf-8" }
+    {encoding: "utf-8"}
   );
 
   // 生成 typing
@@ -70,7 +70,7 @@ export interface ${capitalizedPackageName}Props {
   size?: ComponentSize;
 }   
 `,
-    { encoding: "utf-8" }
+    {encoding: "utf-8"}
   );
 
   // 生成初始化组件
@@ -92,7 +92,7 @@ defineOptions({
 withDefaults(defineProps<${capitalizedPackageName}Props>(), {})
 </script> 
 `,
-    { encoding: "utf-8" }
+    {encoding: "utf-8"}
   );
 }
 
@@ -131,7 +131,7 @@ function getAllEmptyPackages() {
   return readdirSync(packagesRootPath)
     .filter(name => {
       return /^\w/.test(name) &&
-        !existsSync(resolve(packagesRootPath, name, 'packages.json')) &&
+        !existsSync(resolve(packagesRootPath, name, 'package.json')) &&
         statSync(resolve(packagesRootPath, name)).isDirectory()
     });
 }

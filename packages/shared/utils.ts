@@ -1,5 +1,5 @@
 import type { App } from "vue";
-import type { StableComponent } from "./typing";
+import type { PixelUnit, StableComponent } from "./typing";
 
 // 给组件打 install 补丁。
 export function patchInstall<E extends Record<string, StableComponent>>(component: StableComponent, extra?: E) {
@@ -22,4 +22,8 @@ export function patchInstall<E extends Record<string, StableComponent>>(componen
 
 
   return component as StableComponent & E;
+}
+
+export function toPixel(input: PixelUnit) {
+  return typeof input === 'number' ? `${input}px` : input;
 }

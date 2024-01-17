@@ -3,11 +3,15 @@
 </template>
 
 <script lang="ts" setup>
-import type { AlertProps } from "./typing"
+import type {AlertProps, AlertSlot} from "./typing"
 
 defineOptions({
   name: "SAlert"
 });
 
-withDefaults(defineProps<AlertProps>(), {})
+withDefaults(defineProps<AlertProps>(), {
+  type: "primary",
+})
+
+defineSlots<AlertSlot>()
 </script> 

@@ -3,11 +3,17 @@
 </template>
 
 <script lang="ts" setup>
-import type { CardProps } from "./typing"
+import type {CardProps, CardSlots} from "./typing"
 
 defineOptions({
   name: "SCard"
 });
 
-withDefaults(defineProps<CardProps>(), {})
+withDefaults(defineProps<CardProps>(), {
+  type: 'default'
+})
+
+defineSlots<CardSlots>()
+
+defineEmits(["tabChange"])
 </script> 

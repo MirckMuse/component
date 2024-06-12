@@ -3,11 +3,18 @@
 </template>
 
 <script lang="ts" setup>
-import type { CollapseProps } from "./typing"
+import type { CollapseProps, CollapseSlots } from "./typing"
 
 defineOptions({
   name: "SCollapse"
 });
 
-withDefaults(defineProps<CollapseProps>(), {})
+withDefaults(defineProps<CollapseProps>(), {
+  accordion: false,
+  bordered: true,
+  destoryInactivePanel: false,
+  size: "middle",
+});
+
+defineSlots<CollapseSlots>();
 </script> 

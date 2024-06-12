@@ -4,7 +4,9 @@
       "bun-types"
     ],
     "lib": [
-      "ESNext"
+      "ESNext",
+      "DOM",
+      "DOM.Iterable",
     ],
     "baseUrl": "./",
     "paths": {

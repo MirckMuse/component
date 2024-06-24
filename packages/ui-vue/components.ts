@@ -1,1 +1,1 @@
-import Button from "./button"
+export { SButton } from "./button/src"

@@ -1,7 +1,7 @@
 import type { App } from "vue";
-import * as components "./components";
-
 export * from "./components";
+import * as components from "./components";
+
 
 function install(app: App) {
   // 注册组件

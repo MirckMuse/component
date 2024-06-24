@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Tag from "./Tag.vue"
+import Tag from "./Tag.vue";
 
-export const STag = patchInstall(Tag, {})
-    
+export const STag = patchInstall(Tag, {});

@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Input from "./Input.vue"
+import Input from "./Input.vue";
 
-export const SInput = patchInstall(Input, {})
-    
+export const SInput = patchInstall(Input, {});

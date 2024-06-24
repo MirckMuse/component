@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Modal from "./Modal.vue"
+import Modal from "./Modal.vue";
 
-export const SModal = patchInstall(Modal, {})
-    
+export const SModal = patchInstall(Modal, {});

@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Form from "./Form.vue"
+import Form from "./Form.vue";
 
-export const SForm = patchInstall(Form, {})
-    
+export const SForm = patchInstall(Form, {});

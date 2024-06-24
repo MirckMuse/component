@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Cascader from "./Cascader.vue"
+import Cascader from "./Cascader.vue";
 
-export const SCascader = patchInstall(Cascader, {})
-    
+export const SCascader = patchInstall(Cascader, {});

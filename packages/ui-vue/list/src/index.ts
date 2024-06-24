@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import List from "./List.vue"
+import List from "./List.vue";
 
-export const SList = patchInstall(List, {})
-    
+export const SList = patchInstall(List, {});

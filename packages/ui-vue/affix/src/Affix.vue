@@ -1,17 +1,15 @@
-<template>
-  affix
-</template>
+<template>affix</template>
 
 <script lang="ts" setup>
-import type { AffixProps } from "./typing"
+import type { AffixProps } from "./typing";
 
 defineOptions({
-  name: "SAffix"
+    name: "SAffix",
 });
 
 withDefaults(defineProps<AffixProps>(), {
-  target: () => globalThis
-})
+    target: () => document.body,
+});
 
 defineEmits(["change"]);
-</script> 
+</script>

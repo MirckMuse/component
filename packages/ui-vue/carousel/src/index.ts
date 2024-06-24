@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Carousel from "./Carousel.vue"
+import Carousel from "./Carousel.vue";
 
-export const SCarousel = patchInstall(Carousel, {})
-    
+export const SCarousel = patchInstall(Carousel, {});

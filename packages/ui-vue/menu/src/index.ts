@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Menu from "./Menu.vue"
+import Menu from "./Menu.vue";
 
-export const SMenu = patchInstall(Menu, {})
-    
+export const SMenu = patchInstall(Menu, {});

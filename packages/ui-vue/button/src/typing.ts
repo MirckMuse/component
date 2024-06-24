@@ -1,7 +1,14 @@
-import type {ComponentSize} from "@stable/shared";
+import type { ComponentSize } from "../../shared";
 
 // 按钮类型
-export type ButtonType = "default" | "primary" | "success" | "warning" | "danger" | "link" | "text";
+export type ButtonType =
+  | "default"
+  | "primary"
+  | "success"
+  | "warning"
+  | "danger"
+  | "link"
+  | "text";
 
 // 按钮形状
 export type ButtonShape = "default" | "rounded" | "circle";

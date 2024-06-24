@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Slider from "./Slider.vue"
+import Slider from "./Slider.vue";
 
-export const SSlider = patchInstall(Slider, {})
-    
+export const SSlider = patchInstall(Slider, {});

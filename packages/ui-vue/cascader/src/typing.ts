@@ -1,4 +1,4 @@
-import type { ComponentSize, DefaultSlot } from "@stable/shared";
+import type { ComponentSize, DefaultSlot } from "../../shared";
 import type { StyleValue, VNode } from "vue";
 
 export type CascaderValue = string | number;
@@ -7,7 +7,11 @@ export type CascaderStatus = "error" | "warning";
 
 export type CascaderExpandTrigger = "click" | "hover";
 
-export type CascaderPlacement = "bottomLeft" | "bottomRight" | "topLeft" | "topRight";
+export type CascaderPlacement =
+  | "bottomLeft"
+  | "bottomRight"
+  | "topLeft"
+  | "topRight";
 
 export interface CascaderDisplayRenderOption {
   labels: string[];
@@ -37,21 +41,32 @@ export interface CascaderOption {
 
 export type CascaderShowCheckedStrategy = "SHOW_PARENT" | "SHOW_CHILD";
 
-export type CascaderShowSearch = boolean | {
-  filter?: (searchValue: string, path: CascaderOption[]) => boolean;
+export type CascaderShowSearch =
+  | boolean
+  | {
+      filter?: (searchValue: string, path: CascaderOption[]) => boolean;
 
-  limit?: number | false;
+      limit?: number | false;
 
-  matchInputWidth?: boolean;
+      matchInputWidth?: boolean;
 
-  render?: (searchValue: string, path: CascaderOption[]) => VNode;
+      render?: (searchValue: string, path: CascaderOption[]) => VNode;
 
-  sort?: (prev: CascaderOption, next: CascaderOption, searchValue: string) => number;
-};
+      sort?: (
+        prev: CascaderOption,
+        next: CascaderOption,
+        searchValue: string,
+      ) => number;
+    };
 
-export type CascaderChangeEvent = (value: CascaderValue, selectedOptions: CascaderOption[]) => void;
+export type CascaderChangeEvent = (
+  value: CascaderValue,
+  selectedOptions: CascaderOption[],
+) => void;
 
-export type CascaderPopupDropdownVisibleChangeEvent = (value: CascaderValue) => void;
+export type CascaderPopupDropdownVisibleChangeEvent = (
+  value: CascaderValue,
+) => void;
 
 export type CascaderSearchEvent = (searchValue: string) => void;
 

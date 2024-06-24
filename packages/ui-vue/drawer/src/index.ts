@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Drawer from "./Drawer.vue"
+import Drawer from "./Drawer.vue";
 
-export const SDrawer = patchInstall(Drawer, {})
-    
+export const SDrawer = patchInstall(Drawer, {});

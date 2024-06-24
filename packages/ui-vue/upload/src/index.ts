@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Upload from "./Upload.vue"
+import Upload from "./Upload.vue";
 
-export const SUpload = patchInstall(Upload, {})
-    
+export const SUpload = patchInstall(Upload, {});

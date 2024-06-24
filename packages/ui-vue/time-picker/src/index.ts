@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import TimePicker from "./TimePicker.vue"
+import TimePicker from "./TimePicker.vue";
 
-export const STimePicker = patchInstall(TimePicker, {})
-    
+export const STimePicker = patchInstall(TimePicker, {});

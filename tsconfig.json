@@ -6,15 +6,12 @@
     "lib": [
       "ESNext",
       "DOM",
-      "DOM.Iterable",
+      "DOM.Iterable"
     ],
     "baseUrl": "./",
     "paths": {
-      "@stable/component": [
+      "@scode/ui-vue": [
         "packages/ui-vue/index.ts"
-      ],
-      "@stable/shared": [
-        "packages/stared/index.ts"
       ]
     },
     "target": "ESNext",
@@ -24,6 +21,7 @@
     "allowJs": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
+    "isolatedModules": true,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
@@ -41,11 +39,11 @@
     "packages/**/*.ts",
     "packages/**/*.d.ts",
     "packages/**/*.tsx",
-    "packages/**/*.vue",
+    "packages/**/*.vue"
   ],
   "references": [
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
 }

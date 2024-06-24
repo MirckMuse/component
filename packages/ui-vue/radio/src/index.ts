@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Radio from "./Radio.vue"
+import Radio from "./Radio.vue";
 
-export const SRadio = patchInstall(Radio, {})
-    
+export const SRadio = patchInstall(Radio, {});

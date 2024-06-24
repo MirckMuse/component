@@ -1,5 +1,5 @@
-import type {ComponentSize, PixelUnit} from "@stable/shared";
-import type {StyleValue, VNode} from "vue";
+import type { ComponentSize, PixelUnit } from "../../shared";
+import type { StyleValue, VNode } from "vue";
 
 export type AnchorDireaction = "vertical" | "horizontal";
 
@@ -30,7 +30,7 @@ export interface AnchorProps {
 }
 
 export interface AnchorSlot {
-  customTitle?: (option: AnchorItem) => unknown
+  customTitle?: (option: AnchorItem) => unknown;
 }
 
 export interface AnchorItem {

@@ -1,5 +1,5 @@
-import type {ComponentSize, DefaultSlot, PixelUnit} from "@stable/shared";
-import type {StyleValue, VNode} from "vue";
+import type { ComponentSize, DefaultSlot, PixelUnit } from "../../shared";
+import type { StyleValue, VNode } from "vue";
 
 export type BadgeType = "primary" | "success" | "danger" | "warning";
 

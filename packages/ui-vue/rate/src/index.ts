@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Rate from "./Rate.vue"
+import Rate from "./Rate.vue";
 
-export const SRate = patchInstall(Rate, {})
-    
+export const SRate = patchInstall(Rate, {});

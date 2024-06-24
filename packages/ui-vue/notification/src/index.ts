@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Notification from "./Notification.vue"
+import Notification from "./Notification.vue";
 
-export const SNotification = patchInstall(Notification, {})
-    
+export const SNotification = patchInstall(Notification, {});

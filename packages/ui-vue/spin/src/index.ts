@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Spin from "./Spin.vue"
+import Spin from "./Spin.vue";
 
-export const SSpin = patchInstall(Spin, {})
-    
+export const SSpin = patchInstall(Spin, {});

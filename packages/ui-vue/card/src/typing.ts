@@ -1,8 +1,7 @@
-import type {ComponentSize, DefaultSlot} from "@stable/shared";
-import type {StyleValue} from "vue";
+import type { ComponentSize, DefaultSlot } from "../../shared";
+import type { StyleValue } from "vue";
 
-export interface CardCustomTabItem {
-}
+export interface CardCustomTabItem {}
 
 export type CardType = "default" | "inline";
 

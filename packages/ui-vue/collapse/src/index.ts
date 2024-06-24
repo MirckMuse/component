@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Collapse from "./Collapse.vue"
+import Collapse from "./Collapse.vue";
 
-export const SCollapse = patchInstall(Collapse, {})
-    
+export const SCollapse = patchInstall(Collapse, {});

@@ -1,5 +1,5 @@
-import type { ComponentSize } from "@stable/shared";
+import type { ComponentSize } from "../../shared";
 
 export interface PageHeaderProps {
   size?: ComponentSize;
-}   
+}

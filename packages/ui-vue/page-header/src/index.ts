@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import PageHeader from "./PageHeader.vue"
+import PageHeader from "./PageHeader.vue";
 
-export const SPageHeader = patchInstall(PageHeader, {})
-    
+export const SPageHeader = patchInstall(PageHeader, {});

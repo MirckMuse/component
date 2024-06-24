@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import DatePicker from "./DatePicker.vue"
+import DatePicker from "./DatePicker.vue";
 
-export const SDatePicker = patchInstall(DatePicker, {})
-    
+export const SDatePicker = patchInstall(DatePicker, {});

@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Pagination from "./Pagination.vue"
+import Pagination from "./Pagination.vue";
 
-export const SPagination = patchInstall(Pagination, {})
-    
+export const SPagination = patchInstall(Pagination, {});

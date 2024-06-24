@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Message from "./Message.vue"
+import Message from "./Message.vue";
 
-export const SMessage = patchInstall(Message, {})
-    
+export const SMessage = patchInstall(Message, {});

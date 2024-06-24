@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Image from "./Image.vue"
+import Image from "./Image.vue";
 
-export const SImage = patchInstall(Image, {})
-    
+export const SImage = patchInstall(Image, {});

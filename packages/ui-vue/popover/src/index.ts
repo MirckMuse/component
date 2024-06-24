@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Popover from "./Popover.vue"
+import Popover from "./Popover.vue";
 
-export const SPopover = patchInstall(Popover, {})
-    
+export const SPopover = patchInstall(Popover, {});

@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Calendar from "./Calendar.vue"
+import Calendar from "./Calendar.vue";
 
-export const SCalendar = patchInstall(Calendar, {})
-    
+export const SCalendar = patchInstall(Calendar, {});

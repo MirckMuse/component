@@ -1,28 +1,28 @@
-import type {ComponentSize} from "@stable/shared";
-import * as  dayjs from "dayjs";
-import type {VNode} from "vue";
+import type { ComponentSize } from "../../shared";
+import * as dayjs from "dayjs";
+import type { VNode } from "vue";
 
 export type Dayjs = typeof dayjs;
 
 export type CalendarDateCellRenderOption = {
   date: Dayjs;
-}
+};
 
 export type CalendarDateFullCellRenderOption = {
   date: Dayjs;
-}
+};
 
 export type CalendarMonthCellRenderOption = {
   date: Dayjs;
-}
+};
 
-export  type CalendarMonthFullCellRenderOption = {
+export type CalendarMonthFullCellRenderOption = {
   date: Dayjs;
-}
+};
 
 export type CalendarHeaderRenderOption = {
   date: Dayjs;
-}
+};
 
 export type CalendarMode = "month" | "year";
 
@@ -30,7 +30,7 @@ export interface CalendarLocale {
   // TODO:
 }
 
-export type  CalendarValue = Dayjs | string;
+export type CalendarValue = Dayjs | string;
 
 export interface CalendarProps {
   size?: ComponentSize;
@@ -68,12 +68,17 @@ export interface CalendarProps {
 
 export type CalendarChangeEvent = (date: CalendarValue) => void;
 
-export type CalendarPanelChangeEvent = (date: CalendarValue, mode: CalendarMode) => void;
+export type CalendarPanelChangeEvent = (
+  date: CalendarValue,
+  mode: CalendarMode,
+) => void;
 
 export type CalendarSource = "year" | "month" | "date" | "customize";
 
-export type CalendarSelectEvent = (date: Dayjs, info: { source: CalendarSource }) => void;
-
+export type CalendarSelectEvent = (
+  date: Dayjs,
+  info: { source: CalendarSource },
+) => void;
 
 export interface CalendarSlots {
   dateCellRender?: (option: CalendarDateCellRenderOption) => unknown;

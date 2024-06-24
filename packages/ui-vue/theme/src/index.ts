@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Theme from "./Theme.vue"
+import Theme from "./Theme.vue";
 
-export const STheme = patchInstall(Theme, {})
-    
+export const STheme = patchInstall(Theme, {});

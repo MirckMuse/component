@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Steps from "./Steps.vue"
+import Steps from "./Steps.vue";
 
-export const SSteps = patchInstall(Steps, {})
-    
+export const SSteps = patchInstall(Steps, {});

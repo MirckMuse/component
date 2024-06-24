@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Select from "./Select.vue"
+import Select from "./Select.vue";
 
-export const SSelect = patchInstall(Select, {})
-    
+export const SSelect = patchInstall(Select, {});

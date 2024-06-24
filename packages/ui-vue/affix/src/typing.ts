@@ -1,4 +1,4 @@
-import type { PixelUnit } from "@stable/shared";
+import type { PixelUnit } from "../../shared";
 
 export interface AffixProps {
   // 距离窗口底部达到偏移量后触发
@@ -12,4 +12,4 @@ export interface AffixProps {
 
   // 固定状态改变时触发的回调函数
   onChange?: (affixed?: boolean) => void;
-}   
+}

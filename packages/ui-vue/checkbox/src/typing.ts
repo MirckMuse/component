@@ -1,10 +1,13 @@
-import type { ComponentSize } from "@stable/shared";
+import type { ComponentSize } from "../../shared";
 
 export type CheckboxValue = boolean | string | number;
 
 export type CheckboxChangeEvent = (value: CheckboxValue) => void;
 
-export type CheckboxGroupChangeEvent = (currentValue: CheckboxValue, values: CheckboxValue[]) => void;
+export type CheckboxGroupChangeEvent = (
+  currentValue: CheckboxValue,
+  values: CheckboxValue[],
+) => void;
 
 export interface CheckboxOption {
   label?: string;
@@ -17,7 +20,6 @@ export interface CheckboxOption {
 
   onChange: CheckboxChangeEvent;
 }
-
 
 export interface CheckboxProps {
   size?: ComponentSize;

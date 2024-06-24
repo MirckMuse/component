@@ -1,4 +1,4 @@
-import type { ComponentSize, DefaultSlot } from "@stable/shared";
+import type { ComponentSize, DefaultSlot } from "../../shared";
 import type { VNode } from "vue";
 
 export type CollapseKey = string | number;

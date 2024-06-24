@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Switch from "./Switch.vue"
+import Switch from "./Switch.vue";
 
-export const SSwitch = patchInstall(Switch, {})
-    
+export const SSwitch = patchInstall(Switch, {});

@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Card from "./Card.vue"
+import Card from "./Card.vue";
 
-export const SCard = patchInstall(Card, {})
-    
+export const SCard = patchInstall(Card, {});

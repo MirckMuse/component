@@ -1,5 +1,12 @@
-import type {ComponentSize, SOption, PixelUnit, FormItemStatus, DefaultSlot, Noop} from "@stable/shared";
-import type {StyleValue} from "vue";
+import type {
+  ComponentSize,
+  SOption,
+  PixelUnit,
+  FormItemStatus,
+  DefaultSlot,
+  Noop,
+} from "../../shared";
+import type { StyleValue } from "vue";
 
 export type AutoComplateValue = string | SOption | (string | SOption)[];
 
@@ -56,7 +63,6 @@ export interface AutoCompleteProps extends AutoCompleteEvent {
 
   "onUpdate:value"?: (value: AutoComplateValue) => void;
 }
-
 
 export interface AutoComplateSlot {
   default?: DefaultSlot;

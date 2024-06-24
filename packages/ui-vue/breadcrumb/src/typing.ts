@@ -1,6 +1,6 @@
-import type {ComponentSize} from "@stable/shared";
-import type {Menu} from "@stable/menu"
-import type {VNode} from "vue"
+import type { ComponentSize } from "../../shared";
+import type { Menu } from "@stable/menu";
+import type { VNode } from "vue";
 
 // TODO: 需要完善类型
 export interface BreadcrumbItemRenderOption {

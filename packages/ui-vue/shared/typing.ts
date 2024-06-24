@@ -1,7 +1,7 @@
 import type {Component, Plugin, VNode} from "vue";
 
 // TODO: 类型需要完善
-export type StableComponent = Component & {
+export type ScodeComponent = Component & {
   install?: Plugin
 }
 

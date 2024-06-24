@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Tooltip from "./Tooltip.vue"
+import Tooltip from "./Tooltip.vue";
 
-export const STooltip = patchInstall(Tooltip, {})
-    
+export const STooltip = patchInstall(Tooltip, {});

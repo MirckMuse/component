@@ -1,6 +1,6 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Checkbox from "./Checkbox.vue"
-import Group from "./Group.vue"
+import Checkbox from "./Checkbox.vue";
+import Group from "./Group.vue";
 
-export const SCheckbox = patchInstall(Checkbox, { Group })
+export const SCheckbox = patchInstall(Checkbox, { Group });

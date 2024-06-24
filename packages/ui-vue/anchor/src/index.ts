@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Anchor from "./Anchor.vue"
+import Anchor from "./Anchor.vue";
 
-export const SAnchor = patchInstall(Anchor, {})
-    
+export const SAnchor = patchInstall(Anchor, {});

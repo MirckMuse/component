@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Affix from "./Affix.vue"
+import Affix from "./Affix.vue";
 
-export const SAffix = patchInstall(Affix, {})
-    
+export const SAffix = patchInstall(Affix, {});

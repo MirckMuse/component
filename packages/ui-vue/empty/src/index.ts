@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Empty from "./Empty.vue"
+import Empty from "./Empty.vue";
 
-export const SEmpty = patchInstall(Empty, {})
-    
+export const SEmpty = patchInstall(Empty, {});

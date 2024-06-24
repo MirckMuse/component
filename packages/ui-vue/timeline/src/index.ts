@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Timeline from "./Timeline.vue"
+import Timeline from "./Timeline.vue";
 
-export const STimeline = patchInstall(Timeline, {})
-    
+export const STimeline = patchInstall(Timeline, {});

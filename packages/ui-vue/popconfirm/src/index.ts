@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Popconfirm from "./Popconfirm.vue"
+import Popconfirm from "./Popconfirm.vue";
 
-export const SPopconfirm = patchInstall(Popconfirm, {})
-    
+export const SPopconfirm = patchInstall(Popconfirm, {});

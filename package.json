@@ -1,27 +1,26 @@
 {
-  "name": "@stable/component",
+  "name": "@scode/component",
   "version": "0.0.1",
   "description": "",
   "module": "index.ts",
   "private": true,
   "type": "module",
   "scripts": {
-    "preinstall": "npx only-allow bun",
+    "preinstall": "bunx only-allow bun",
     "dev": "bunx --bun vite serve example",
     "test": "vitest",
     "build": "bunx --bun vite build example",
-    "initPackages":"bun run ./scripts/init-packages.ts",
+    "initPackages": "bun run ./scripts/init-packages.ts",
     "format": "bunx @biomejs/biome format ./src/**/*.{ts,vue} --write",
     "lint": "bunx @biomejs/biome lint ./src/**/*.{ts,vue}"
   },
   "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
     "@types/bun": "latest",
     "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/tsconfig": "^0.5.1",
     "browserslist": "^4.22.2",
     "bun-types": "^1.0.0",
     "lib": "^5.1.0",

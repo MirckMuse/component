@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Tree from "./Tree.vue"
+import Tree from "./Tree.vue";
 
-export const STree = patchInstall(Tree, {})
-    
+export const STree = patchInstall(Tree, {});

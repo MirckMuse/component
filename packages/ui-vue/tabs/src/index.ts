@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import Tabs from "./Tabs.vue"
+import Tabs from "./Tabs.vue";
 
-export const STabs = patchInstall(Tabs, {})
-    
+export const STabs = patchInstall(Tabs, {});

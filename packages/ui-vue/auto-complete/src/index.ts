@@ -1,6 +1,5 @@
-import { patchInstall } from "@stable/shared";
+import { patchInstall } from "../../shared";
 
-import AutoComplete from "./AutoComplete.vue"
+import AutoComplete from "./AutoComplete.vue";
 
-export const SAutoComplete = patchInstall(AutoComplete, {})
-    
+export const SAutoComplete = patchInstall(AutoComplete, {});

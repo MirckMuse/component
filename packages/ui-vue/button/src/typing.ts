@@ -40,6 +40,8 @@ export interface ButtonProps {
   target?: string;
 
   onClick?: ButtonClickEvent;
+
+  prefixClass?: string;
 }
 
 export interface ButtonGroupProps {
